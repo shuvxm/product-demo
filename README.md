@@ -6,7 +6,7 @@ A responsive product display webpage built using **HTML**, **JavaScript**, and *
 
 ## 📸 Screenshot
 
-![Product List Screenshot](./screenshot.png) <!-- Make sure to place your image in the root and rename to screenshot.png -->
+![Product List Screenshot](./product.png) <!-- Make sure to place your image in the root and rename to screenshot.png -->
 
 ---
 

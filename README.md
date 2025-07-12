@@ -35,10 +35,10 @@ A responsive product display webpage built using **HTML**, **JavaScript**, and *
 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/product-list-app.git
-
-npm install -D tailwindcss
-npx tailwindcss init
-
+  ```bash
+   npm install -D tailwindcss
+   npx tailwindcss init
+```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
 🧑‍💻 Author

@@ -39,12 +39,15 @@ A responsive product display webpage built using **HTML**, **JavaScript**, and *
    npm install -D tailwindcss
    npx tailwindcss init
 ```
+```bash
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
 
 🧑‍💻 Author
 Shubham Kumar
-LinkedIn: linkedin.com/in/shubhamsharma0
-Email: kumarshubham5559@gmail.com
+🔗 LinkedIn
+📧 kumarshubham5559@gmail.com
+
 
 📜 License
 This project is licensed under the MIT License.

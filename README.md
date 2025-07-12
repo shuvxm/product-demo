@@ -30,21 +30,6 @@ A responsive product display webpage built using **HTML**, **JavaScript**, and *
 
 ---
 
-## 📂 Folder Structure
-
-project/
-│
-├── index.html
-├── script.js
-├── src/
-│ ├── input.css # Tailwind directives
-│ └── output.css # Generated Tailwind CSS
-├── screenshot.png # App preview
-└── README.md
-
-
----
-
 ## 🔧 Setup Instructions
 
 1. **Clone the repository**

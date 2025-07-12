@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        /* background: #f4f4f4; */
+        margin: 0;
+        padding: 0px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px; /* Increased gap between cards */
+        margin: 40px auto; /* Top-bottom margin + center the container */
+        padding: 0 40px; /* Left-right internal space */
+        max-width: 1200px; /* Controls overall width for luxury layout */
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: 0 auto; /* ✅ Center image horizontally */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Brand / Logo -->
+          <div class="text-red-600 font-extrabold text-2xl tracking-wide">
+            Product List
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="flex gap-6 text-white font-medium pl-3 pr-3">
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
+                >Search</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Push content down below the fixed navbar -->
+    <div class="mt-20">
+      <!-- <div class="container" id="productContainer"></div> -->
+      <div
+        class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 px-4"
+        id="productContainer"
+      ></div>
+
+      <footer
+        class="mt-10 w-full bg-gray-900 text-white text-center py-5 rounded-xl text-base tracking-wide shadow-md"
+      >
+        <p class="m-0">
+          &copy; 2024 Product Display. All rights reserved. | Designed by
+          Shubham
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -17,7 +17,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px; /* Increased gap between cards */
-        margin: 40px auto; /* Top-bottom margin + center the container */
+        margin: 60px auto; /* Top-bottom margin + center the container */
         padding: 0 40px; /* Left-right internal space */
         max-width: 1200px; /* Controls overall width for luxury layout */
       }
@@ -48,10 +48,27 @@
   <body>
     <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <!-- Brand / Logo -->
-          <div class="text-red-600 font-extrabold text-2xl tracking-wide">
-            Product List
+        <div class="flex justify-between items-center h-16 text-center">
+          <!-- Brand / Logo Icon -->
+          <div class="flex items-center gap-2">
+            <!-- Ecommerce SVG Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7 text-red-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7.5M17 13l1.5 7.5M9 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"
+              />
+            </svg>
+            <h1 class="text-red-600 font-extrabold text-2xl tracking-wide">
+              Product List
+            </h1>
           </div>
 
           <!-- Navigation Links -->
@@ -60,29 +77,56 @@
               <a
                 href="#"
                 class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
-                >Home</a
               >
+                Home
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
-                >About</a
               >
+                Products
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
-                >Contact</a
               >
+                About
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300"
-                >Search</a
               >
+                Support
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-600 hover:text-white px-3 py-2 rounded transition duration-300 flex items-center gap-1"
+              >
+                <!-- Search Icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103.5 3.5a7.5 7.5 0 0013.15 13.15z"
+                  />
+                </svg>
+                Search
+              </a>
             </li>
           </ul>
         </div>
@@ -90,7 +134,7 @@
     </header>
 
     <!-- Push content down below the fixed navbar -->
-    <div class="mt-20">
+    <div class="mt-7">
       <!-- <div class="container" id="productContainer"></div> -->
       <div
         class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 px-4"
